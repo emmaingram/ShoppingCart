@@ -28,7 +28,7 @@ void ShoppingCart::AddItem(ItemToPurchase item){
 	return;
 }
 
-//function to add item to cart
+//function to remove item from cart
 void ShoppingCart::RemoveItem(ItemToPurchase item1, string itemsName){
 	int index=0;
 	for(int i=0; i<cartItems.size(); i++){
@@ -43,7 +43,7 @@ void ShoppingCart::RemoveItem(ItemToPurchase item1, string itemsName){
 	return;
 }
 
-//function to add item to cart
+//function to change quantity of item
 void ShoppingCart::ModifyItem(ItemToPurchase item2){
 	for(int i=0; i<cartItems.size(); i++){
 		if((cartItems.at(i)).GetName() == item2.GetName()) {
